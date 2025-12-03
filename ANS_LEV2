@@ -1,0 +1,95 @@
+1
+
+num = int(input("Enter a number: "))
+
+if num > 0:
+    print("Positive")
+elif num < 0:
+    print("Negative")
+else:
+    print("Zero")
+
+2
+
+
+num = int(input("Enter a number: "))
+
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+3
+
+num = int(input("Enter a number: "))
+
+if num % 5 == 0:
+    print("Divisible by 5")
+else:
+    print("Not divisible by 5")
+
+4
+
+num = int(input("Enter a number: "))
+
+if num % 3 == 0 and num % 5 == 0:
+    print("Divisible by both 3 and 5")
+else:
+    print("Not divisible by both")
+
+5
+
+year = int(input("Enter year: "))
+
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+    print("Leap Year")
+else:
+    print("Not a Leap Year")
+
+6
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+if a >= b and a >= c:
+    print("Largest:", a)
+elif b >= a and b >= c:
+    print("Largest:", b)
+else:
+    print("Largest:", c)
+
+7
+
+temp = int(input("Enter temperature: "))
+
+if temp < 20:
+    print("Cold")
+elif 20 <= temp < 35:
+    print("Warm")
+else:
+    print("Hot")
+
+9
+
+ch = input("Enter a character: ").lower()
+
+if ch in 'aeiou':
+    print("Vowel")
+elif ch.isalpha():
+    print("Consonant")
+else:
+    print("Not a letter")
+
+10
+
+ch = input("Enter a character: ")
+
+if ch.isupper():
+    print("Uppercase")
+elif ch.islower():
+    print("Lowercase")
+elif ch.isdigit():
+    print("Digit")
+else:
+    print("Special Character")
